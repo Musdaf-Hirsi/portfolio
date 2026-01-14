@@ -1,0 +1,363 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Musdaf Hirsi - Resume</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+    
+    body {
+      font-family: 'Calibri', 'Arial', sans-serif;
+      font-size: 11pt;
+      line-height: 1.4;
+      color: #000;
+      max-width: 8.5in;
+      margin: 0 auto;
+      padding: 0.5in;
+      background: #fff;
+    }
+    
+    a {
+      color: #0066cc;
+      text-decoration: none;
+    }
+    
+    a:hover {
+      text-decoration: underline;
+    }
+    
+    /* Header */
+    .header {
+      text-align: center;
+      margin-bottom: 10px;
+      border-bottom: 2px solid #000;
+      padding-bottom: 10px;
+    }
+    
+    .header h1 {
+      font-size: 24pt;
+      font-weight: bold;
+      margin-bottom: 5px;
+    }
+    
+    .header .contact {
+      font-size: 10pt;
+    }
+    
+    .header .contact a {
+      color: #000;
+    }
+    
+    .header .portfolio {
+      margin-top: 5px;
+      font-size: 10pt;
+    }
+    
+    .header .portfolio a {
+      color: #0066cc;
+      font-weight: bold;
+    }
+    
+    /* Sections */
+    section {
+      margin-bottom: 12px;
+    }
+    
+    section h2 {
+      font-size: 12pt;
+      font-weight: bold;
+      text-transform: uppercase;
+      border-bottom: 1px solid #000;
+      margin-bottom: 6px;
+      padding-bottom: 2px;
+    }
+    
+    /* Objective */
+    .objective p {
+      text-align: justify;
+    }
+    
+    /* Education & Experience entries */
+    .entry {
+      margin-bottom: 8px;
+    }
+    
+    .entry-header {
+      display: flex;
+      justify-content: space-between;
+      align-items: baseline;
+    }
+    
+    .entry-header .title {
+      font-weight: bold;
+    }
+    
+    .entry-header .date {
+      font-style: italic;
+      font-size: 10pt;
+    }
+    
+    .entry-subheader {
+      display: flex;
+      justify-content: space-between;
+      font-style: italic;
+      font-size: 10pt;
+      margin-bottom: 3px;
+    }
+    
+    /* Skills */
+    .skills-list {
+      display: grid;
+      grid-template-columns: 140px 1fr;
+      gap: 2px 10px;
+    }
+    
+    .skills-list dt {
+      font-weight: bold;
+    }
+    
+    .skills-list dd {
+      margin: 0;
+    }
+    
+    /* Projects */
+    .project {
+      margin-bottom: 10px;
+    }
+    
+    .project-header {
+      display: flex;
+      justify-content: space-between;
+      align-items: baseline;
+      margin-bottom: 2px;
+    }
+    
+    .project-header .title {
+      font-weight: bold;
+    }
+    
+    .project-header .tech {
+      font-style: italic;
+      color: #333;
+    }
+    
+    .project-header .date {
+      font-style: italic;
+      font-size: 10pt;
+    }
+    
+    .project-link {
+      font-size: 10pt;
+      margin-bottom: 3px;
+    }
+    
+    /* Lists */
+    ul {
+      margin-left: 18px;
+    }
+    
+    li {
+      margin-bottom: 2px;
+    }
+    
+    /* Print styles */
+    @media print {
+      body {
+        padding: 0;
+      }
+      
+      a {
+        color: #000;
+      }
+      
+      .header .portfolio a {
+        color: #000;
+      }
+    }
+  </style>
+</head>
+<body>
+  <!-- Header -->
+  <header class="header">
+    <h1>Musdaf Hirsi</h1>
+    <div class="contact">
+      343-580-8812 | 
+      <a href="mailto:22pmw@queensu.ca">22pmw@queensu.ca</a> | 
+      <a href="https://linkedin.com/in/musdaf-abdihakim">linkedin.com/in/musdaf-abdihakim</a> | 
+      <a href="https://github.com/Musdaf-Hirsi">github.com/Musdaf-Hirsi</a>
+    </div>
+    <div class="portfolio">
+      <strong>Portfolio:</strong> <a href="https://musdaf-hirsi.github.io/portfolio">musdaf-hirsi.github.io/portfolio</a>
+    </div>
+  </header>
+
+  <!-- Objective -->
+  <section class="objective">
+    <h2>Objective</h2>
+    <p>Motivated Computer Science student specializing in cybersecurity, seeking internship experience in vulnerability analysis, secure system configuration, and IT support. Strong hands-on experience with Linux, networking, and cybersecurity lab environments.</p>
+  </section>
+
+  <!-- Education -->
+  <section>
+    <h2>Education</h2>
+    <div class="entry">
+      <div class="entry-header">
+        <span class="title">Queen's University</span>
+        <span class="date">Sep 2022 – Present</span>
+      </div>
+      <div class="entry-subheader">
+        <span>B.A. in Computer Science</span>
+        <span>Kingston, ON</span>
+      </div>
+    </div>
+    <div class="entry">
+      <div class="entry-header">
+        <span class="title">Ubinifu College</span>
+        <span class="date">Apr 2021 – Jul 2022</span>
+      </div>
+      <div class="entry-subheader">
+        <span>CodeHive Software Development Program</span>
+        <span>Nairobi, Kenya</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- Technical Skills -->
+  <section>
+    <h2>Technical Skills</h2>
+    <dl class="skills-list">
+      <dt>Languages:</dt>
+      <dd>Python, C, Java, SQL, JavaScript</dd>
+      <dt>Frameworks:</dt>
+      <dd>Flask, Django, React, Next.js</dd>
+      <dt>Cybersecurity:</dt>
+      <dd>Linux (Ubuntu), Bash, Wireshark, Nmap, Burp Suite, VirtualBox, PuTTY</dd>
+      <dt>Developer Tools:</dt>
+      <dd>Git, GitHub, GitLab, Jira, Confluence, VS Code, PyCharm, IntelliJ, Eclipse</dd>
+      <dt>Databases:</dt>
+      <dd>PostgreSQL, SQLite</dd>
+    </dl>
+  </section>
+
+  <!-- Projects -->
+  <section>
+    <h2>Projects</h2>
+    
+    <div class="project">
+      <div class="project-header">
+        <span><span class="title">Password Strength Analyzer</span> | <span class="tech">Flask, Python, zxcvbn, HIBP API</span></span>
+        <span class="date">2025</span>
+      </div>
+      <div class="project-link">
+        <strong>Live Demo:</strong> <a href="https://password-strength-web-qf0n.onrender.com">password-strength-web-qf0n.onrender.com</a>
+      </div>
+      <ul>
+        <li>Built a defensive password strength checker using entropy analysis and pattern detection with zxcvbn.</li>
+        <li>Integrated Have I Been Pwned API with k-anonymity to check passwords against known breaches.</li>
+        <li>Implemented rate limiting (10 req/min) and security headers (CSP, X-Frame-Options, X-Content-Type-Options).</li>
+        <li>Designed secure JSON API that processes passwords in memory only — never logs or stores user input.</li>
+      </ul>
+    </div>
+
+    <div class="project">
+      <div class="project-header">
+        <span><span class="title">Phishing URL Detector</span> | <span class="tech">Flask, Python, PhishTank, URLhaus</span></span>
+        <span class="date">2025</span>
+      </div>
+      <div class="project-link">
+        <strong>Live Demo:</strong> <a href="https://phish-detector-e2oo.onrender.com">phish-detector-e2oo.onrender.com</a>
+      </div>
+      <ul>
+        <li>Developed a URL analysis tool that detects phishing indicators using static string analysis (SSRF-safe).</li>
+        <li>Integrated threat intelligence feeds (PhishTank, URLhaus) for known-bad URL lookups.</li>
+        <li>Implemented risk scoring (0-100) with explainable results for each detection signal.</li>
+        <li>Applied security hardening: rate limiting, request size limits, security headers, JSON-only API.</li>
+      </ul>
+    </div>
+
+    <div class="project">
+      <div class="project-header">
+        <span><span class="title">Cybersecurity Labs (SEED Labs)</span> | <span class="tech">C, Linux, OpenSSL</span></span>
+        <span class="date">2024 – 2025</span>
+      </div>
+      <ul>
+        <li>Completed hands-on labs in buffer overflow, XSS, secret-key encryption, DNS spoofing, and password cracking.</li>
+        <li>Executed controlled cyberattacks in isolated Linux environments to analyze vulnerabilities.</li>
+        <li>Configured mitigations such as input validation, memory-safe C functions, and secure DNS settings.</li>
+        <li>Produced detailed reports documenting attack steps, observations, and recommended defenses.</li>
+      </ul>
+    </div>
+
+    <div class="project">
+      <div class="project-header">
+        <span><span class="title">Siege of Morrofeld — Tower Defense Game</span> | <span class="tech">C++, Unreal Engine</span></span>
+        <span class="date">2025</span>
+      </div>
+      <ul>
+        <li>Developed five modular tower subclasses using object-oriented C++ and Unreal Engine's component system.</li>
+        <li>Implemented core game mechanics including enemy pathing, tower targeting, firing logic, and wave management.</li>
+        <li>Collaborated with an 8-person team using GitLab, Jira, and Confluence under strict deadlines.</li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- Experience -->
+  <section>
+    <h2>Experience</h2>
+    
+    <div class="entry">
+      <div class="entry-header">
+        <span class="title">IT Student Technician</span>
+        <span class="date">May 2023 – Aug 2023</span>
+      </div>
+      <div class="entry-subheader">
+        <span>Housing & Ancillary Services, Queen's University</span>
+        <span>Kingston, ON</span>
+      </div>
+      <ul>
+        <li>Installed, configured, and troubleshot university workstations, printers, and classroom IT equipment.</li>
+        <li>Assisted with network device setup, connectivity checks, and basic switch port diagnostics.</li>
+        <li>Ensured device compliance with university security standards and software imaging requirements.</li>
+        <li>Provided front-line IT support for students, faculty, and staff with clear, beginner-friendly explanations.</li>
+      </ul>
+    </div>
+
+    <div class="entry">
+      <div class="entry-header">
+        <span class="title">WUSC Local Committee Volunteer</span>
+        <span class="date">Sep 2023 – Present</span>
+      </div>
+      <div class="entry-subheader">
+        <span>Queen's University</span>
+        <span>Kingston, ON</span>
+      </div>
+      <ul>
+        <li>Helped new WUSC scholars navigate settlement, orientation, and academic onboarding.</li>
+        <li>Supported newcomers with course registration, residence setup, and accessing campus resources.</li>
+        <li>Participated in planning cultural and academic support events to improve scholar integration.</li>
+      </ul>
+    </div>
+
+    <div class="entry">
+      <div class="entry-header">
+        <span class="title">Household Data Enumerator</span>
+        <span class="date">Jan 2020 – Dec 2020</span>
+      </div>
+      <div class="entry-subheader">
+        <span>Save the Children</span>
+        <span>Dadaab, Kenya</span>
+      </div>
+      <ul>
+        <li>Collected household survey data on living conditions, sanitation, and child well-being.</li>
+        <li>Maintained high accuracy and confidentiality while working with diverse communities.</li>
+      </ul>
+    </div>
+  </section>
+
+</body>
+</html>

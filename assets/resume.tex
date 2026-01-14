@@ -1,0 +1,183 @@
+%-------------------------
+% Resume in LaTeX
+% Author: Musdaf Hirsi
+%-------------------------
+
+\documentclass[letterpaper,11pt]{article}
+
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+\usepackage{fancyhdr}
+\usepackage[english]{babel}
+\usepackage{tabularx}
+
+% Page style
+\pagestyle{fancy}
+\fancyhf{}
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+% Margins
+\addtolength{\oddsidemargin}{-0.5in}
+\addtolength{\evensidemargin}{-0.5in}
+\addtolength{\textwidth}{1in}
+\addtolength{\topmargin}{-0.5in}
+\addtolength{\textheight}{1.0in}
+
+\urlstyle{same}
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+% Section formatting
+\titleformat{\section}{
+  \vspace{-4pt}\scshape\raggedright\large
+}{}{0em}{}[\color{black}\titlerule \vspace{-5pt}]
+
+% Custom commands
+\newcommand{\resumeItem}[1]{\item\small{#1 \vspace{-2pt}}}
+\newcommand{\resumeSubheading}[4]{
+  \vspace{-2pt}\item
+    \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & #2 \\
+      \textit{\small#3} & \textit{\small #4} \\
+    \end{tabular*}\vspace{-7pt}
+}
+\newcommand{\resumeProjectHeading}[2]{
+    \item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \small#1 & #2 \\
+    \end{tabular*}\vspace{-7pt}
+}
+\newcommand{\resumeSubItem}[1]{\resumeItem{#1}\vspace{-4pt}}
+\renewcommand\labelitemii{$\vcenter{\hbox{\tiny$\bullet$}}$}
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=0.15in, label={}]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+\newcommand{\resumeItemListStart}{\begin{itemize}}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
+
+%-------------------------------------------
+%  RESUME STARTS HERE
+%-------------------------------------------
+
+\begin{document}
+
+%----------HEADING----------
+\begin{center}
+    \textbf{\Huge \scshape Musdaf Hirsi} \\ \vspace{1pt}
+    \small 343-580-8812 $|$ 
+    \href{mailto:22pmw@queensu.ca}{\underline{22pmw@queensu.ca}} $|$ 
+    \href{https://linkedin.com/in/musdaf-abdihakim}{\underline{linkedin.com/in/musdaf-abdihakim}} $|$
+    \href{https://github.com/Musdaf-Hirsi}{\underline{github.com/Musdaf-Hirsi}} \\ \vspace{2pt}
+    \textbf{Portfolio:} \href{https://musdaf-hirsi.github.io/portfolio}{\underline{musdaf-hirsi.github.io/portfolio}}
+\end{center}
+
+%-----------OBJECTIVE-----------
+\section{Objective}
+  \resumeSubHeadingListStart
+    \item \small{Motivated Computer Science student specializing in cybersecurity, seeking internship experience in vulnerability analysis, secure system configuration, and IT support. Strong hands-on experience with Linux, networking, and cybersecurity lab environments.}
+  \resumeSubHeadingListEnd
+
+%-----------EDUCATION-----------
+\section{Education}
+  \resumeSubHeadingListStart
+    \resumeSubheading
+      {Queen's University}{Kingston, ON}
+      {B.A. in Computer Science}{Sep 2022 -- Present}
+    \resumeSubheading
+      {Ubinifu College}{Nairobi, Kenya}
+      {CodeHive Software Development Program}{Apr 2021 -- Jul 2022}
+  \resumeSubHeadingListEnd
+
+%-----------TECHNICAL SKILLS-----------
+\section{Technical Skills}
+ \begin{itemize}[leftmargin=0.15in, label={}]
+    \small{\item{
+     \textbf{Languages}{: Python, C, Java, SQL, JavaScript} \\
+     \textbf{Frameworks}{: Flask, Django, React, Next.js} \\
+     \textbf{Cybersecurity / Tools}{: Linux (Ubuntu), Bash, Wireshark, Nmap, Burp Suite, VirtualBox, PuTTY} \\
+     \textbf{Developer Tools}{: Git, GitHub, GitLab, Jira, Confluence, VS Code, PyCharm, IntelliJ, Eclipse} \\
+     \textbf{Databases}{: PostgreSQL, SQLite}
+    }}
+ \end{itemize}
+
+%-----------PROJECTS-----------
+\section{Projects}
+  \resumeSubHeadingListStart
+
+    \resumeProjectHeading
+      {\textbf{Password Strength Analyzer} $|$ \emph{Flask, Python, zxcvbn, HIBP API} $|$ \href{https://password-strength-web-qf0n.onrender.com}{\underline{Live Demo}}}{2025}
+      \resumeItemListStart
+        \resumeItem{Built a defensive password strength checker using entropy analysis and pattern detection with zxcvbn.}
+        \resumeItem{Integrated Have I Been Pwned API with k-anonymity to check passwords against known breaches.}
+        \resumeItem{Implemented rate limiting (10 req/min) and security headers (CSP, X-Frame-Options, X-Content-Type-Options).}
+        \resumeItem{Designed secure JSON API that processes passwords in memory only -- never logs or stores user input.}
+      \resumeItemListEnd
+
+    \resumeProjectHeading
+      {\textbf{Phishing URL Detector} $|$ \emph{Flask, Python, PhishTank, URLhaus} $|$ \href{https://phish-detector-e2oo.onrender.com}{\underline{Live Demo}}}{2025}
+      \resumeItemListStart
+        \resumeItem{Developed a URL analysis tool that detects phishing indicators using static string analysis (SSRF-safe).}
+        \resumeItem{Integrated threat intelligence feeds (PhishTank, URLhaus) for known-bad URL lookups.}
+        \resumeItem{Implemented risk scoring (0-100) with explainable results for each detection signal.}
+        \resumeItem{Applied security hardening: rate limiting, request size limits, security headers, JSON-only API.}
+      \resumeItemListEnd
+
+    \resumeProjectHeading
+      {\textbf{Cybersecurity Labs (SEED Labs)} $|$ \emph{C, Linux, OpenSSL}}{2024 -- 2025}
+      \resumeItemListStart
+        \resumeItem{Completed hands-on labs in buffer overflow, XSS, secret-key encryption, DNS spoofing, and password cracking.}
+        \resumeItem{Executed controlled cyberattacks in isolated Linux environments to analyze vulnerabilities.}
+        \resumeItem{Configured mitigations such as input validation, memory-safe C functions, and secure DNS settings.}
+        \resumeItem{Produced detailed reports documenting attack steps, observations, and recommended defenses.}
+      \resumeItemListEnd
+
+    \resumeProjectHeading
+      {\textbf{Siege of Morrofeld -- Tower Defense Game} $|$ \emph{C++, Unreal Engine}}{2025}
+      \resumeItemListStart
+        \resumeItem{Developed five modular tower subclasses using object-oriented C++ and Unreal Engine's component system.}
+        \resumeItem{Implemented core game mechanics including enemy pathing, tower targeting, firing logic, and wave management.}
+        \resumeItem{Collaborated with an 8-person team using GitLab, Jira, and Confluence under strict deadlines.}
+      \resumeItemListEnd
+
+  \resumeSubHeadingListEnd
+
+%-----------EXPERIENCE-----------
+\section{Experience}
+  \resumeSubHeadingListStart
+
+    \resumeSubheading
+      {IT Student Technician}{May 2023 -- Aug 2023}
+      {Housing \& Ancillary Services, Queen's University}{Kingston, ON}
+      \resumeItemListStart
+        \resumeItem{Installed, configured, and troubleshot university workstations, printers, and classroom IT equipment.}
+        \resumeItem{Assisted with network device setup, connectivity checks, and basic switch port diagnostics.}
+        \resumeItem{Ensured device compliance with university security standards and software imaging requirements.}
+        \resumeItem{Provided front-line IT support for students, faculty, and staff with clear, beginner-friendly explanations.}
+      \resumeItemListEnd
+
+    \resumeSubheading
+      {WUSC Local Committee Volunteer}{Sep 2023 -- Present}
+      {Queen's University}{Kingston, ON}
+      \resumeItemListStart
+        \resumeItem{Helped new WUSC scholars navigate settlement, orientation, and academic onboarding.}
+        \resumeItem{Supported newcomers with course registration, residence setup, and accessing campus resources.}
+        \resumeItem{Participated in planning cultural and academic support events to improve scholar integration.}
+      \resumeItemListEnd
+
+    \resumeSubheading
+      {Household Data Enumerator}{Jan 2020 -- Dec 2020}
+      {Save the Children}{Dadaab, Kenya}
+      \resumeItemListStart
+        \resumeItem{Collected household survey data on living conditions, sanitation, and child well-being.}
+        \resumeItem{Maintained high accuracy and confidentiality while working with diverse communities.}
+      \resumeItemListEnd
+
+  \resumeSubHeadingListEnd
+
+%-------------------------------------------
+\end{document}
