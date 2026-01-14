@@ -1,0 +1,99 @@
+{
+  "featured": [
+    {
+      "id": "password-strength-web",
+      "name": "Password Strength Analyzer",
+      "repo": "password-strength-web",
+      "repoUrl": "https://github.com/Musdaf-Hirsi/password-strength-web",
+      "liveDemo": "https://password-strength-web-qf0n.onrender.com",
+      "description": "A defensive password strength checker built with Flask. Evaluates passwords using entropy analysis, pattern detection, and breach-list lookups without storing or logging passwords.",
+      "tags": ["Flask", "Python", "Web Security", "API", "Rate Limiting"],
+      "skills": [
+        "Implemented zxcvbn entropy scoring and pattern detection",
+        "Integrated Have I Been Pwned API with k-anonymity for breach checks",
+        "Applied rate limiting (10 req/min) and security headers (CSP, X-Frame-Options)",
+        "Built secure JSON API that never logs or stores passwords"
+      ],
+      "image": null
+    },
+    {
+      "id": "secret-key-encryption",
+      "name": "Secret-Key Encryption Lab",
+      "repo": "01-secret-key-encryption",
+      "repoUrl": "https://github.com/Musdaf-Hirsi/01-secret-key-encryption",
+      "liveDemo": null,
+      "description": "Cryptography lab from CISC 447/866 demonstrating AES encryption modes, padding schemes, IV vulnerabilities, and a key finder program using OpenSSL.",
+      "tags": ["Cryptography", "Shell", "OpenSSL", "AES", "Linux"],
+      "skills": [
+        "Explored AES-CBC, ECB, and CTR encryption modes",
+        "Analyzed padding oracle and IV reuse vulnerabilities",
+        "Built shell scripts to automate encryption/decryption tasks",
+        "Implemented brute-force key finder for weak key spaces"
+      ],
+      "image": null
+    },
+    {
+      "id": "attack-lab",
+      "name": "Attack Lab (Buffer Overflow)",
+      "repo": "Attack-lab",
+      "repoUrl": "https://github.com/Musdaf-Hirsi/Attack-lab",
+      "liveDemo": null,
+      "description": "Binary exploitation lab practicing buffer overflow attacks, code injection, and return-oriented programming (ROP) on vulnerable executables.",
+      "tags": ["Binary Exploitation", "C", "Assembly", "Linux", "Offensive Security"],
+      "skills": [
+        "Exploited stack buffer overflows to hijack control flow",
+        "Crafted shellcode payloads for code injection attacks",
+        "Practiced return-oriented programming (ROP) techniques",
+        "Analyzed x86-64 assembly and memory layout"
+      ],
+      "image": null
+    }
+  ],
+  "other": [
+    {
+      "id": "library-management-a2",
+      "name": "Library Management System (QA)",
+      "repo": "cisc327-library-management-a2-6847",
+      "repoUrl": "https://github.com/Musdaf-Hirsi/cisc327-library-management-a2-6847",
+      "liveDemo": null,
+      "description": "Flask web application for library management with comprehensive test suite, CI/CD pipeline, and Docker containerization.",
+      "tags": ["Flask", "Python", "pytest", "Docker", "CI/CD"],
+      "skills": [
+        "Wrote pytest test suites with coverage reporting",
+        "Configured GitHub Actions for automated testing",
+        "Containerized application with Docker"
+      ],
+      "image": null
+    },
+    {
+      "id": "library-a1",
+      "name": "Library System (Flask + SQLite)",
+      "repo": "CISC327-A1-Library",
+      "repoUrl": "https://github.com/Musdaf-Hirsi/CISC327-A1-Library",
+      "liveDemo": null,
+      "description": "Flask-based library management system with SQLite database, modular blueprints, and comprehensive requirements specification.",
+      "tags": ["Flask", "Python", "SQLite", "Web Development"],
+      "skills": [
+        "Implemented Flask blueprints for modular routing",
+        "Designed SQLite database schema",
+        "Built REST API endpoints for library operations"
+      ],
+      "image": null
+    },
+    {
+      "id": "tower-defense",
+      "name": "Siege of Morrofeld (Tower Defense)",
+      "repo": "Siege-of-Morrofeld-Tower-Defense-Game",
+      "repoUrl": "https://github.com/Musdaf-Hirsi/Siege-of-Morrofeld-Tower-Defense-Game",
+      "liveDemo": null,
+      "description": "Tower defense game built in C++ demonstrating object-oriented design, game loop architecture, and systems programming.",
+      "tags": ["C++", "Game Dev", "OOP", "Systems Programming"],
+      "skills": [
+        "Implemented game loop and state management in C++",
+        "Applied object-oriented design patterns",
+        "Managed memory and system resources"
+      ],
+      "image": null
+    }
+  ]
+}
