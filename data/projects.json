@@ -17,6 +17,22 @@
       "image": null
     },
     {
+      "id": "phish-detector",
+      "name": "Phishing URL Detector",
+      "repo": "phish-detector",
+      "repoUrl": "https://github.com/Musdaf-Hirsi/phish-detector",
+      "liveDemo": "https://phish-detector-e2oo.onrender.com",
+      "description": "A defensive web application that analyzes URLs for phishing indicators using static URL analysis and threat intelligence feeds (PhishTank, URLhaus). Returns risk scores with explainable results.",
+      "tags": ["Flask", "Python", "Threat Intelligence", "Web Security", "API"],
+      "skills": [
+        "Built URL structure analysis detecting IP hosts, punycode, and suspicious TLDs",
+        "Integrated PhishTank and URLhaus threat intelligence feeds",
+        "Implemented risk scoring (0-100) with human-readable explanations",
+        "Applied SSRF prevention by analyzing URL strings only, never fetching content"
+      ],
+      "image": null
+    },
+    {
       "id": "secret-key-encryption",
       "name": "Secret-Key Encryption Lab",
       "repo": "01-secret-key-encryption",
