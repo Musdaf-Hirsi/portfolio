@@ -63,6 +63,22 @@
         "Analyzed x86-64 assembly and memory layout"
       ],
       "image": null
+    },
+    {
+      "id": "cisc468-p2pshare",
+      "name": "P2P Secure File Sharing (CISC 468)",
+      "repo": "cisc468-p2pshare",
+      "repoUrl": "https://github.com/Musdaf-Hirsi/cisc468-p2pshare",
+      "liveDemo": null,
+      "description": "End-to-end encrypted peer-to-peer file sharing system built for CISC 468 (Cryptography). Java client implements a full wire protocol with mutual authentication, encrypted transport, and secure local storage. Interoperates with a Python client over TLS.",
+      "tags": ["Java", "Cryptography", "TLS", "Ed25519", "AES-256-GCM", "Networking", "P2P"],
+      "skills": [
+        "Implemented Ed25519 identity keys with SHA-256 peer IDs and signed HELLO handshake for mutual authentication",
+        "Built AES-256-GCM encrypted message transport with HKDF session key derivation (per-peer shared secret)",
+        "Secured local storage using Argon2id key derivation and a custom binary format (P2SF) with authenticated encryption",
+        "Designed a full wire protocol with mDNS peer discovery, message validation, TOFU contact verification, and key migration support"
+      ],
+      "image": null
     }
   ],
   "other": [
